@@ -56,6 +56,16 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Methods | Setters
+    
+    public func setEmptyCellsSeparators(hidden: Bool) {
+        if hidden {
+            tableView.tableFooterView = UIView()
+        } else {
+            tableView.tableFooterView = nil
+        }
+    }
+    
     // MARK: - Methods | UITableView DataSource & Delegate
     
     override public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

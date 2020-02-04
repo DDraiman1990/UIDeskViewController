@@ -52,6 +52,7 @@ class FetchResultsExampleViewController: UIViewController {
         tableViewController.determineCellHeight = { user, row in
             return self.cellHeight
         }
+        tableViewController.setEmptyCellsSeparators(hidden: true)
         embed(tableViewController, containerView: view)
     }
 }
