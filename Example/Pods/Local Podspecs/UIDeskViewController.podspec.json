@@ -1,0 +1,35 @@
+{
+  "name": "UIDeskViewController",
+  "version": "0.1.0",
+  "summary": "A simple Generic UITableViewController for iOS",
+  "description": "A simple Generic UITableViewController for iOS",
+  "homepage": "https://github.com/ddraiman1990/UIDeskViewController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ddraiman1990": "ddraiman1990@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ddraiman1990/UIDeskViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UIDeskViewController/Classes/**/*",
+  "frameworks": [
+    "CoreData",
+    "UIKit"
+  ],
+  "swift_versions": "5.0",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Example/Tests/UnitTests/**/*"
+    }
+  ],
+  "swift_version": "5.0"
+}

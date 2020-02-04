@@ -1,0 +1,6 @@
+framework module UIDeskViewController {
+  umbrella header "UIDeskViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

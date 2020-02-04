@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E4EB3E1641B43D5033082ADC1706288 /* UIDeskViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2B70A896D77F832B7D1CFA6C0EDD9 /* UIDeskViewController-dummy.m */; };
+		19FC4ED402EAE766695D10740C8C7B84 /* UIItemsDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F329CB70A4ECE2820F0E550140031 /* UIItemsDeskViewController.swift */; };
+		1C53E063E27DACBA30532FDA1FE8B325 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F2421DDFCF1695D879977644C7549 /* Foundation.framework */; };
+		2E77874CBA4CACC54725CC43EE493AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F2421DDFCF1695D879977644C7549 /* Foundation.framework */; };
+		2EBA83CB3FBF47821BDD46A76B6AC776 /* Pods-UIDeskViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD2A9B5BC6419E2BB4DAF7198F2F3D8 /* Pods-UIDeskViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3248EA4ABC4F7BE1D9A11C938164036D /* Pods-UIDeskViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0C97FCC83D51241E91026D7E073928 /* Pods-UIDeskViewController_Tests-dummy.m */; };
+		44E94CD74808BF5E2EFEC4FC3D39EA6A /* UIBaseDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6223F23A1A4C2F1E2BDAFC511FCCDC2A /* UIBaseDeskViewController.swift */; };
+		52799DEADB67C33A39B1549D0DF028D1 /* UIFetchResultDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC0FCB8FCC4ACFBEF35CF97A2F93B4 /* UIFetchResultDeskViewController.swift */; };
+		5319E123B8EA03D03AFB901C154EED90 /* UIDeskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E8AE5910A09993BB559CF17754C8B /* UIDeskCell.swift */; };
+		5827559B0C8BA95DF60F34CE931CBACA /* UIDeskViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8149E08A2E45E35E30400371A70C63 /* UIDeskViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC69A2D707188FC884373072B00DB79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5488ABAB6CAE8B35910D4FFF04AFC54 /* UIKit.framework */; };
+		63D38790C261DD8A2BE52613443EF6E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F2421DDFCF1695D879977644C7549 /* Foundation.framework */; };
+		82FBE3809858DEB81721DF9BDA744F3D /* Pods-UIDeskViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6FC8ED578A4ED74D8C854219387641 /* Pods-UIDeskViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AABC1804A7D56B8058924FE7BD7E13E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F11D66CEE8A84E709E35CCBE1222E17 /* CoreData.framework */; };
+		BE7D9D3D75C618B0B8E5BC0B9FA8A378 /* UIGenericDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB40D70DAED0CB66DC361D3E676E46F /* UIGenericDeskViewController.swift */; };
+		F25B82BB72D9505AF4B0C377FB722F53 /* Pods-UIDeskViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97478C445448B2D31AC285961CAD6A2C /* Pods-UIDeskViewController_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BBE42269806E20930B01492DABB046E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7ADDCEA20898BA235B933EEA912FDD2;
+			remoteInfo = "Pods-UIDeskViewController_Example";
+		};
+		735AF75A412A6FC7AFF027F44B8FE06B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9826ADE49477AB8CC6889B78FE01B749;
+			remoteInfo = UIDeskViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		088F329CB70A4ECE2820F0E550140031 /* UIItemsDeskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIItemsDeskViewController.swift; path = UIDeskViewController/Classes/UIItemsDeskViewController.swift; sourceTree = "<group>"; };
+		0F8149E08A2E45E35E30400371A70C63 /* UIDeskViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeskViewController-umbrella.h"; sourceTree = "<group>"; };
+		17C2A0ECB8C15B86A02649028A87D498 /* Pods-UIDeskViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIDeskViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1D9582891E84544BB56C70942439B78B /* Pods-UIDeskViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIDeskViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C9F2421DDFCF1695D879977644C7549 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		586564FE24E4B5EE5555BB24812463CF /* Pods-UIDeskViewController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIDeskViewController_Tests-Info.plist"; sourceTree = "<group>"; };
+		58DE5B096AB230988E2277186D85AC45 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5E0AE1F37A179CF661A53FD1808E47B7 /* Pods-UIDeskViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIDeskViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		5FCC0FCB8FCC4ACFBEF35CF97A2F93B4 /* UIFetchResultDeskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIFetchResultDeskViewController.swift; path = UIDeskViewController/Classes/UIFetchResultDeskViewController.swift; sourceTree = "<group>"; };
+		6223F23A1A4C2F1E2BDAFC511FCCDC2A /* UIBaseDeskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBaseDeskViewController.swift; path = UIDeskViewController/Classes/UIBaseDeskViewController.swift; sourceTree = "<group>"; };
+		65A59C4F677DADCCB6298D142EF6D693 /* Pods-UIDeskViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIDeskViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6F11D66CEE8A84E709E35CCBE1222E17 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		717076ED935FD44BDA04A63FAD0F73B3 /* Pods-UIDeskViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIDeskViewController_Example.modulemap"; sourceTree = "<group>"; };
+		77AD9F4127872F56F308D7649BC20C40 /* Pods-UIDeskViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIDeskViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7AB2B70A896D77F832B7D1CFA6C0EDD9 /* UIDeskViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDeskViewController-dummy.m"; sourceTree = "<group>"; };
+		7FF2989B1EDAD5095A3DBDEC56CF5816 /* UIDeskViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeskViewController-prefix.pch"; sourceTree = "<group>"; };
+		8A18565B8C1EAB58A914F282498A2330 /* Pods-UIDeskViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIDeskViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CD2A9B5BC6419E2BB4DAF7198F2F3D8 /* Pods-UIDeskViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIDeskViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+		8D6FC8ED578A4ED74D8C854219387641 /* Pods-UIDeskViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIDeskViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		97478C445448B2D31AC285961CAD6A2C /* Pods-UIDeskViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIDeskViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		9D02FAD066FAC58AAE906F612F243CD2 /* Pods-UIDeskViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIDeskViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5E592F931AE8513DDF3200641EB007E /* Pods-UIDeskViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIDeskViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B5FD9A066D5DC8067DE651B936262A6B /* Pods_UIDeskViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UIDeskViewController_Tests.framework; path = "Pods-UIDeskViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BBDA91119257F05D189B21DE2EBDE4 /* Pods_UIDeskViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UIDeskViewController_Example.framework; path = "Pods-UIDeskViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC973AEC748ACF3DF9AF07F761B421BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BE0C97FCC83D51241E91026D7E073928 /* Pods-UIDeskViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIDeskViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		C460B164A92D22D5F646D9F24EAD76ED /* UIDeskViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIDeskViewController.framework; path = UIDeskViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94F1A52AC83C207D147DA0843CAE29C /* Pods-UIDeskViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIDeskViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CF19E1F7BB0486AAA3F7A0488771382D /* UIDeskViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = UIDeskViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CFD041B071C5FD144F0177C338A45339 /* Pods-UIDeskViewController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIDeskViewController_Example-Info.plist"; sourceTree = "<group>"; };
+		D5488ABAB6CAE8B35910D4FFF04AFC54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D690FC3A038916D65C363C616092C527 /* UIDeskViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIDeskViewController-Info.plist"; sourceTree = "<group>"; };
+		DBB40D70DAED0CB66DC361D3E676E46F /* UIGenericDeskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIGenericDeskViewController.swift; path = UIDeskViewController/Classes/UIGenericDeskViewController.swift; sourceTree = "<group>"; };
+		EE9E8AE5910A09993BB559CF17754C8B /* UIDeskCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIDeskCell.swift; path = UIDeskViewController/Classes/UIDeskCell.swift; sourceTree = "<group>"; };
+		EFDC8E761F738DED1A5ACAB7855B09EF /* UIDeskViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeskViewController.xcconfig; sourceTree = "<group>"; };
+		F094A7DC72AE35E2B2FC780CEDC73C3B /* Pods-UIDeskViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIDeskViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE12C86918ED8E6F3E7AF749CB813D3A /* UIDeskViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIDeskViewController.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22CFF9F2469019B8F83BF1A69AA75596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E77874CBA4CACC54725CC43EE493AE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4199E6B328D3AC9F05EA4D3ACA86BA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D38790C261DD8A2BE52613443EF6E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5A715ABBA6323A9B406574296C2F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AABC1804A7D56B8058924FE7BD7E13E /* CoreData.framework in Frameworks */,
+				1C53E063E27DACBA30532FDA1FE8B325 /* Foundation.framework in Frameworks */,
+				5FC69A2D707188FC884373072B00DB79 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF3F1F7B881D5D81558E32B8C7C8121 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C5CA515C70352CF0B56AF9A5458C9BE /* UIDeskViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6223F23A1A4C2F1E2BDAFC511FCCDC2A /* UIBaseDeskViewController.swift */,
+				EE9E8AE5910A09993BB559CF17754C8B /* UIDeskCell.swift */,
+				5FCC0FCB8FCC4ACFBEF35CF97A2F93B4 /* UIFetchResultDeskViewController.swift */,
+				DBB40D70DAED0CB66DC361D3E676E46F /* UIGenericDeskViewController.swift */,
+				088F329CB70A4ECE2820F0E550140031 /* UIItemsDeskViewController.swift */,
+				6E489535D967A3552AC8392DFA1786DD /* Pod */,
+				DC2AE228F786CC3A77F9F4EB35186D81 /* Support Files */,
+			);
+			name = UIDeskViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1FC66F57CD37E26F48C5C780DA108350 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C35474F6E348C972AB2F5297544E2410 /* Pods-UIDeskViewController_Example */,
+				25E078EBF3EC144E3DC152E3FAEE4BC7 /* Pods-UIDeskViewController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25E078EBF3EC144E3DC152E3FAEE4BC7 /* Pods-UIDeskViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5E0AE1F37A179CF661A53FD1808E47B7 /* Pods-UIDeskViewController_Tests.modulemap */,
+				17C2A0ECB8C15B86A02649028A87D498 /* Pods-UIDeskViewController_Tests-acknowledgements.markdown */,
+				1D9582891E84544BB56C70942439B78B /* Pods-UIDeskViewController_Tests-acknowledgements.plist */,
+				BE0C97FCC83D51241E91026D7E073928 /* Pods-UIDeskViewController_Tests-dummy.m */,
+				586564FE24E4B5EE5555BB24812463CF /* Pods-UIDeskViewController_Tests-Info.plist */,
+				8D6FC8ED578A4ED74D8C854219387641 /* Pods-UIDeskViewController_Tests-umbrella.h */,
+				8A18565B8C1EAB58A914F282498A2330 /* Pods-UIDeskViewController_Tests.debug.xcconfig */,
+				9D02FAD066FAC58AAE906F612F243CD2 /* Pods-UIDeskViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-UIDeskViewController_Tests";
+			path = "Target Support Files/Pods-UIDeskViewController_Tests";
+			sourceTree = "<group>";
+		};
+		50FA0E0BAF5336D34E312E929267D876 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C5CA515C70352CF0B56AF9A5458C9BE /* UIDeskViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6E489535D967A3552AC8392DFA1786DD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				58DE5B096AB230988E2277186D85AC45 /* LICENSE */,
+				BC973AEC748ACF3DF9AF07F761B421BF /* README.md */,
+				CF19E1F7BB0486AAA3F7A0488771382D /* UIDeskViewController.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		ACD98F16EB690022E8FF2E648218FA71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBDA91119257F05D189B21DE2EBDE4 /* Pods_UIDeskViewController_Example.framework */,
+				B5FD9A066D5DC8067DE651B936262A6B /* Pods_UIDeskViewController_Tests.framework */,
+				C460B164A92D22D5F646D9F24EAD76ED /* UIDeskViewController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFF3F1F7B881D5D81558E32B8C7C8121 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F11D66CEE8A84E709E35CCBE1222E17 /* CoreData.framework */,
+				2C9F2421DDFCF1695D879977644C7549 /* Foundation.framework */,
+				D5488ABAB6CAE8B35910D4FFF04AFC54 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C35474F6E348C972AB2F5297544E2410 /* Pods-UIDeskViewController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				717076ED935FD44BDA04A63FAD0F73B3 /* Pods-UIDeskViewController_Example.modulemap */,
+				F094A7DC72AE35E2B2FC780CEDC73C3B /* Pods-UIDeskViewController_Example-acknowledgements.markdown */,
+				B5E592F931AE8513DDF3200641EB007E /* Pods-UIDeskViewController_Example-acknowledgements.plist */,
+				97478C445448B2D31AC285961CAD6A2C /* Pods-UIDeskViewController_Example-dummy.m */,
+				C94F1A52AC83C207D147DA0843CAE29C /* Pods-UIDeskViewController_Example-frameworks.sh */,
+				CFD041B071C5FD144F0177C338A45339 /* Pods-UIDeskViewController_Example-Info.plist */,
+				8CD2A9B5BC6419E2BB4DAF7198F2F3D8 /* Pods-UIDeskViewController_Example-umbrella.h */,
+				65A59C4F677DADCCB6298D142EF6D693 /* Pods-UIDeskViewController_Example.debug.xcconfig */,
+				77AD9F4127872F56F308D7649BC20C40 /* Pods-UIDeskViewController_Example.release.xcconfig */,
+			);
+			name = "Pods-UIDeskViewController_Example";
+			path = "Target Support Files/Pods-UIDeskViewController_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				50FA0E0BAF5336D34E312E929267D876 /* Development Pods */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				ACD98F16EB690022E8FF2E648218FA71 /* Products */,
+				1FC66F57CD37E26F48C5C780DA108350 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DC2AE228F786CC3A77F9F4EB35186D81 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE12C86918ED8E6F3E7AF749CB813D3A /* UIDeskViewController.modulemap */,
+				EFDC8E761F738DED1A5ACAB7855B09EF /* UIDeskViewController.xcconfig */,
+				7AB2B70A896D77F832B7D1CFA6C0EDD9 /* UIDeskViewController-dummy.m */,
+				D690FC3A038916D65C363C616092C527 /* UIDeskViewController-Info.plist */,
+				7FF2989B1EDAD5095A3DBDEC56CF5816 /* UIDeskViewController-prefix.pch */,
+				0F8149E08A2E45E35E30400371A70C63 /* UIDeskViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/UIDeskViewController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8B89AB7413320C307AFE9742AE0F265E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5827559B0C8BA95DF60F34CE931CBACA /* UIDeskViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9701EB00CE4B38ED02F126F939E09F10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBA83CB3FBF47821BDD46A76B6AC776 /* Pods-UIDeskViewController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C6B8A982DD37E2BE43FC658FB29AE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82FBE3809858DEB81721DF9BDA744F3D /* Pods-UIDeskViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E10552DD464F19B72405EF807BC5146 /* Pods-UIDeskViewController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47C8BD6A81D5626F1A64037F4B9EC42 /* Build configuration list for PBXNativeTarget "Pods-UIDeskViewController_Tests" */;
+			buildPhases = (
+				B7C6B8A982DD37E2BE43FC658FB29AE6 /* Headers */,
+				EFC94AA84089287671699CD4F140171B /* Sources */,
+				4199E6B328D3AC9F05EA4D3ACA86BA04 /* Frameworks */,
+				4280ECABEED71687C2253D322E1C81D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A9F7761609DAEC53240DA43294987F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-UIDeskViewController_Tests";
+			productName = "Pods-UIDeskViewController_Tests";
+			productReference = B5FD9A066D5DC8067DE651B936262A6B /* Pods_UIDeskViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9826ADE49477AB8CC6889B78FE01B749 /* UIDeskViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94C2D80BC014974B3BFA635CE792352 /* Build configuration list for PBXNativeTarget "UIDeskViewController" */;
+			buildPhases = (
+				8B89AB7413320C307AFE9742AE0F265E /* Headers */,
+				C57A3AF688BB71E8866202F6766D6A35 /* Sources */,
+				9D5A715ABBA6323A9B406574296C2F27 /* Frameworks */,
+				FD63BC8485330B27FAED4A985722FA2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIDeskViewController;
+			productName = UIDeskViewController;
+			productReference = C460B164A92D22D5F646D9F24EAD76ED /* UIDeskViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7ADDCEA20898BA235B933EEA912FDD2 /* Pods-UIDeskViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64850F741E54F190265E042DC778ED15 /* Build configuration list for PBXNativeTarget "Pods-UIDeskViewController_Example" */;
+			buildPhases = (
+				9701EB00CE4B38ED02F126F939E09F10 /* Headers */,
+				4BB727ABC4F6282752B939CE6774FC75 /* Sources */,
+				22CFF9F2469019B8F83BF1A69AA75596 /* Frameworks */,
+				0F021D65D6CA4B853F353C60A22D32DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EDF908D72151D511B16CF799AB669C /* PBXTargetDependency */,
+			);
+			name = "Pods-UIDeskViewController_Example";
+			productName = "Pods-UIDeskViewController_Example";
+			productReference = B8BBDA91119257F05D189B21DE2EBDE4 /* Pods_UIDeskViewController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = ACD98F16EB690022E8FF2E648218FA71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7ADDCEA20898BA235B933EEA912FDD2 /* Pods-UIDeskViewController_Example */,
+				6E10552DD464F19B72405EF807BC5146 /* Pods-UIDeskViewController_Tests */,
+				9826ADE49477AB8CC6889B78FE01B749 /* UIDeskViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F021D65D6CA4B853F353C60A22D32DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4280ECABEED71687C2253D322E1C81D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD63BC8485330B27FAED4A985722FA2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BB727ABC4F6282752B939CE6774FC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25B82BB72D9505AF4B0C377FB722F53 /* Pods-UIDeskViewController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57A3AF688BB71E8866202F6766D6A35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E94CD74808BF5E2EFEC4FC3D39EA6A /* UIBaseDeskViewController.swift in Sources */,
+				5319E123B8EA03D03AFB901C154EED90 /* UIDeskCell.swift in Sources */,
+				0E4EB3E1641B43D5033082ADC1706288 /* UIDeskViewController-dummy.m in Sources */,
+				52799DEADB67C33A39B1549D0DF028D1 /* UIFetchResultDeskViewController.swift in Sources */,
+				BE7D9D3D75C618B0B8E5BC0B9FA8A378 /* UIGenericDeskViewController.swift in Sources */,
+				19FC4ED402EAE766695D10740C8C7B84 /* UIItemsDeskViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC94AA84089287671699CD4F140171B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3248EA4ABC4F7BE1D9A11C938164036D /* Pods-UIDeskViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A9F7761609DAEC53240DA43294987F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UIDeskViewController_Example";
+			target = A7ADDCEA20898BA235B933EEA912FDD2 /* Pods-UIDeskViewController_Example */;
+			targetProxy = 1BBE42269806E20930B01492DABB046E /* PBXContainerItemProxy */;
+		};
+		E4EDF908D72151D511B16CF799AB669C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIDeskViewController;
+			target = 9826ADE49477AB8CC6889B78FE01B749 /* UIDeskViewController */;
+			targetProxy = 735AF75A412A6FC7AFF027F44B8FE06B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3D1811710C07794DC404F11AE20AFDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A59C4F677DADCCB6298D142EF6D693 /* Pods-UIDeskViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UIDeskViewController_Example/Pods-UIDeskViewController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIDeskViewController_Example/Pods-UIDeskViewController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E3C6E7A641E652FD935D2AC726AFED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDC8E761F738DED1A5ACAB7855B09EF /* UIDeskViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIDeskViewController/UIDeskViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIDeskViewController/UIDeskViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIDeskViewController/UIDeskViewController.modulemap";
+				PRODUCT_MODULE_NAME = UIDeskViewController;
+				PRODUCT_NAME = UIDeskViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5454FBFFC48675491E0477BA655AEAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D02FAD066FAC58AAE906F612F243CD2 /* Pods-UIDeskViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UIDeskViewController_Tests/Pods-UIDeskViewController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIDeskViewController_Tests/Pods-UIDeskViewController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71D90C385F00F4D5B0BBC4015DBE1B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDC8E761F738DED1A5ACAB7855B09EF /* UIDeskViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIDeskViewController/UIDeskViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIDeskViewController/UIDeskViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIDeskViewController/UIDeskViewController.modulemap";
+				PRODUCT_MODULE_NAME = UIDeskViewController;
+				PRODUCT_NAME = UIDeskViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		768BF928441BFE66661BC0C7E8CAEAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77AD9F4127872F56F308D7649BC20C40 /* Pods-UIDeskViewController_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UIDeskViewController_Example/Pods-UIDeskViewController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIDeskViewController_Example/Pods-UIDeskViewController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8314D8DBFEA60C6DF9FCDC3A92486F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A18565B8C1EAB58A914F282498A2330 /* Pods-UIDeskViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UIDeskViewController_Tests/Pods-UIDeskViewController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIDeskViewController_Tests/Pods-UIDeskViewController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64850F741E54F190265E042DC778ED15 /* Build configuration list for PBXNativeTarget "Pods-UIDeskViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1811710C07794DC404F11AE20AFDD5 /* Debug */,
+				768BF928441BFE66661BC0C7E8CAEAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C47C8BD6A81D5626F1A64037F4B9EC42 /* Build configuration list for PBXNativeTarget "Pods-UIDeskViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8314D8DBFEA60C6DF9FCDC3A92486F3A /* Debug */,
+				5454FBFFC48675491E0477BA655AEAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94C2D80BC014974B3BFA635CE792352 /* Build configuration list for PBXNativeTarget "UIDeskViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3C6E7A641E652FD935D2AC726AFED7 /* Debug */,
+				71D90C385F00F4D5B0BBC4015DBE1B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

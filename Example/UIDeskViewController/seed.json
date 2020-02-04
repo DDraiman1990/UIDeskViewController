@@ -1,0 +1,18 @@
+[
+ {
+"firstname": "Geralt", "lastname": "Of Rivia", "age": 97
+},
+
+{
+"firstname": "Yennefer", "lastname": "Of Vengerberg", "age": 101
+},
+
+{
+"firstname": "Triss", "lastname": "Merigold", "age": 41
+},
+
+{
+"firstname": "Emhyr", "lastname": "Var Emreis", "age": 45
+}
+ ]
+

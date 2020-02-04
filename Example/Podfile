@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UIDeskViewController_Example' do
+  pod 'UIDeskViewController', :path => '../'
+
+  target 'UIDeskViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

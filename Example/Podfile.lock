@@ -1,0 +1,16 @@
+PODS:
+  - UIDeskViewController (0.1.0)
+
+DEPENDENCIES:
+  - UIDeskViewController (from `../`)
+
+EXTERNAL SOURCES:
+  UIDeskViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIDeskViewController: ef583d75ee365622b89f0b0803d894a447aa1067
+
+PODFILE CHECKSUM: 0a59f580a96df79cb0b600d3719ef9becd673da9
+
+COCOAPODS: 1.8.4
