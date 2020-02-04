@@ -1,15 +1,27 @@
-# UIDeskViewController
+<p align="center">
+<img src="https://user-images.githubusercontent.com/6796434/73785593-32523380-475d-11ea-9811-ffd67297d436.png" height="70%" width="400">
+<br/>
 
-[![CI Status](https://img.shields.io/travis/ddraiman1990/UIDeskViewController.svg?style=flat)](https://travis-ci.org/ddraiman1990/UIDeskViewController)
+UIDeskViewController is a simple Generic UITableViewController for iOS.
+
+<br/>
+</p>
+
 [![Version](https://img.shields.io/cocoapods/v/UIDeskViewController.svg?style=flat)](https://cocoapods.org/pods/UIDeskViewController)
 [![License](https://img.shields.io/cocoapods/l/UIDeskViewController.svg?style=flat)](https://cocoapods.org/pods/UIDeskViewController)
 [![Platform](https://img.shields.io/cocoapods/p/UIDeskViewController.svg?style=flat)](https://cocoapods.org/pods/UIDeskViewController)
+
+----
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- Swift 5.0 or above.
+- Deployment Target: 10.0 or above (due to the use of NSFetchResultsController)
+
 
 ## Installation
 
@@ -19,6 +31,10 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'UIDeskViewController'
 ```
+
+## Usage
+
+#### Coming Soon!
 
 ## Author
 
