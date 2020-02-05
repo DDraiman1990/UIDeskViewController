@@ -81,6 +81,13 @@ class FetchResultsExampleViewController: UIViewController {
         title: "Lullaby of Woe",
         description: "As the witcher, brave and bold, paid in coin of gold. He'll chop and slice you, cut and dice you, eat you up whole. Eat you whole.",
         icon: UIImage(named: "dvc_wolf"))
+        tableViewController.refresh = { completed in
+            print("Refreshing")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                print("Finished refreshing!")
+                completed()
+            })
+        }
         embed(tableViewController, containerView: view)
     }
     

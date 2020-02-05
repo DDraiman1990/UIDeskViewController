@@ -45,6 +45,19 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     public var determineCellHeight: ((T, Int) -> CGFloat)?
     public var onEmptyStateChanged: ((UIView, Bool) -> Void)?
     public var onDeleteRequested: ((T, IndexPath) -> Bool)?
+    public var refresh: ((@escaping () -> Void) -> Void)? {
+        didSet {
+            if self.refresh != nil {
+                self.refreshControl = UIRefreshControl()
+                refreshControl?.addTarget(
+                    self,
+                    action: #selector(shouldRefresh),
+                    for: .valueChanged)
+            } else {
+                self.refreshControl = nil
+            }
+        }
+    }
     
     // MARK: - Properties | Should be Overridden by Child
 
@@ -132,6 +145,12 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     }
     
     // MARK: - Methods | Data Handling
+    
+    @objc private func shouldRefresh() {
+        refresh?({ [weak self] in
+            self?.refreshControl?.endRefreshing()
+        })
+    }
     
     private func delete(itemAt indexPath: IndexPath) {
         guard let item = self.item(at: indexPath) else {

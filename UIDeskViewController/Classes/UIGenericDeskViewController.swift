@@ -35,6 +35,8 @@ public protocol UIGenericDeskViewController: UITableViewController {
     typealias DetermineCellHeight = (ModelType, Int) -> CGFloat
     typealias EmptyStateChanged = (UIView, Bool) -> Void
     typealias DeleteRequest = (ModelType, IndexPath) -> Bool
+    typealias OnRefreshRequested = (@escaping CompletedCallback) -> Void
+    typealias CompletedCallback = () -> Void
     /// The closure to be called when the list transitions from
     /// or to an empty state
     ///
@@ -58,6 +60,10 @@ public protocol UIGenericDeskViewController: UITableViewController {
     /// A closure to be called every time the controller wishes to
     /// delete an entry.
     var onDeleteRequested: DeleteRequest? { get set }
+    
+    /// A closure to be called every time the controller wishes to
+    /// refresh its data.
+    var refresh: OnRefreshRequested? { get set }
     
     /// How many cells does this controller have.
     var cellCount: Int { get }
