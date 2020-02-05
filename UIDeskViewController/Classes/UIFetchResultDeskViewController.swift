@@ -83,6 +83,19 @@ public class UIFetchResultDeskViewController<T: NSFetchRequestResult, Cell: UIDe
     
     // MARK: - Methods | UIBaseDeskViewController
     
+    override internal func delete(itemAt indexPath: IndexPath) {
+        guard let context = fetchedResultsController?.managedObjectContext,
+            let item = self.item(at: indexPath) as? NSManagedObject else {
+            return
+        }
+        context.delete(item)
+        do {
+            try context.save()
+        } catch {
+            context.undo()
+        }
+    }
+    
     override public func item(at indexPath: IndexPath) -> T? {
         return fetchedResultsController?.object(at: indexPath)
     }

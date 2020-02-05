@@ -75,6 +75,11 @@ public class UIItemsDeskViewController<T, Cell: UIDeskCell>: UIBaseDeskViewContr
     
     // MARK: - Methods | UIBaseDeskViewController
     
+    override internal func delete(itemAt indexPath: IndexPath) {
+        items.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+    }
+    
     override public func item(at indexPath: IndexPath) -> T? {
         return items[indexPath.row]
     }

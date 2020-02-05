@@ -57,6 +57,7 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         return nil
     }
     public func reloadData() {}
+    internal func delete(itemAt: IndexPath) {}
     
     // MARK: - Methods | UIGenericDeskViewController
     
@@ -153,6 +154,12 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         }
         configure(cell, item)
         return cell
+    }
+    
+    public override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            delete(itemAt: indexPath)
+        }
     }
     
     override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
