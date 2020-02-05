@@ -53,8 +53,8 @@ public class UIFetchResultDeskViewController<T: NSFetchRequestResult, Cell: UIDe
         super.init(configure: configure, didSelectRow: didSelectRow)
         fetchController?.delegate = self
         reloadData()
-        self.onDeleteRequested = { [weak self] item, _ in
-            return self?.delete(item: item) ?? false
+        self.onDeleteRequested = { [weak self] item, _, completed in
+            return self?.delete(item: item, completed: completed)
         }
     }
     
@@ -86,18 +86,19 @@ public class UIFetchResultDeskViewController<T: NSFetchRequestResult, Cell: UIDe
     
     // MARK: - Methods | UIBaseDeskViewController
     
-    private func delete(item: T) -> Bool {
+    private func delete(item: T, completed: @escaping (Bool) -> Void) {
         guard let context = fetchedResultsController?.managedObjectContext,
             let item = item as? NSManagedObject else {
-            return false
+            completed(false)
+            return
         }
         context.delete(item)
         do {
             try context.save()
-            return true
+            completed(true)
         } catch {
             context.undo()
-            return false
+            completed(false)
         }
     }
     

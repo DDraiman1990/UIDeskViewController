@@ -44,7 +44,7 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     public var didSelectRow: (T, Int) -> Void
     public var determineCellHeight: ((T, Int) -> CGFloat)?
     public var onEmptyStateChanged: ((UIView, Bool) -> Void)?
-    public var onDeleteRequested: ((T, IndexPath) -> Bool)?
+    public var onDeleteRequested: ((T, IndexPath, @escaping (Bool) -> Void) -> Void)?
     public var refresh: ((@escaping () -> Void) -> Void)? {
         didSet {
             if self.refresh != nil {
@@ -156,9 +156,9 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         guard let item = self.item(at: indexPath) else {
             return
         }
-        if onDeleteRequested?(item, indexPath) ?? false {
-            onDeleted(item: item, at: indexPath)
-        }
+        onDeleteRequested?(item, indexPath, { [weak self] deleted in
+            self?.onDeleted(item: item, at: indexPath)
+        })
     }
     
     // MARK: - Methods | UITableView DataSource & Delegate

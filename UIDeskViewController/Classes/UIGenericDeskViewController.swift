@@ -34,7 +34,7 @@ public protocol UIGenericDeskViewController: UITableViewController {
     typealias RowSelected = (ModelType, Int) -> Void
     typealias DetermineCellHeight = (ModelType, Int) -> CGFloat
     typealias EmptyStateChanged = (UIView, Bool) -> Void
-    typealias DeleteRequest = (ModelType, IndexPath) -> Bool
+    typealias DeleteRequest = ((ModelType, IndexPath, @escaping (Bool) -> Void) -> Void)
     typealias OnRefreshRequested = (@escaping CompletedCallback) -> Void
     typealias CompletedCallback = () -> Void
     /// The closure to be called when the list transitions from

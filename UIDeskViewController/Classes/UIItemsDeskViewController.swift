@@ -46,9 +46,9 @@ public class UIItemsDeskViewController<T, Cell: UIDeskCell>: UIBaseDeskViewContr
          didSelectRow: @escaping RowSelected) {
         self.items = items
         super.init(configure: configure, didSelectRow: didSelectRow)
-        self.onDeleteRequested = { [weak self] _, indexPath in
+        self.onDeleteRequested = { [weak self] _, indexPath, completed in
             self?.delete(itemAt: indexPath)
-            return true
+            completed(true)
         }
     }
     
