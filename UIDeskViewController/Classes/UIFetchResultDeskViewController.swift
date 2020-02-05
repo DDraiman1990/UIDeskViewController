@@ -51,6 +51,7 @@ public class UIFetchResultDeskViewController<T: NSFetchRequestResult, Cell: UIDe
          didSelectRow: @escaping RowSelected) {
         self.fetchedResultsController = fetchController
         super.init(configure: configure, didSelectRow: didSelectRow)
+        fetchController?.delegate = self
         reloadData()
     }
     
@@ -66,6 +67,7 @@ public class UIFetchResultDeskViewController<T: NSFetchRequestResult, Cell: UIDe
     
     public func set(fetchController: NSFetchedResultsController<T>) {
         self.fetchedResultsController = fetchController
+        fetchController.delegate = self
         self.reloadData()
     }
     

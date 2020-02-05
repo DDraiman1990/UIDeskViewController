@@ -43,9 +43,11 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     public var configure: (Cell, T) -> Void
     public var didSelectRow: (T, Int) -> Void
     public var determineCellHeight: ((T, Int) -> CGFloat)?
+    public var emptyStateChanged: ((UIView, Bool) -> Void)?
     
     // MARK: - Properties | Should be Overridden by Child
 
+    private var previousCellCount: Int? = nil
     public var cellCount: Int {
         return 0
     }
@@ -55,6 +57,29 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         return nil
     }
     public func reloadData() {}
+    
+    // MARK: - Methods | UIGenericDeskViewController
+    
+    public func setEmptyStateView(title: String,
+                                  description: String,
+                                  icon: UIImage?) {
+        let emptyStateView = UIDeskEmptyStateView(
+            frame: tableView.frame,
+            title: title,
+            description: description,
+            icon: icon)
+        set(customEmptyStateView: emptyStateView)
+    }
+    
+    public func clearEmptyStateView() {
+        tableView.backgroundView = nil
+        emptyStateChanged = nil
+    }
+    
+    public func set(customEmptyStateView: UIView) {
+        tableView.backgroundView = customEmptyStateView
+        tableView.backgroundView?.isHidden = cellCount > 0
+    }
     
     // MARK: - Methods | Lifecycle
     
@@ -84,6 +109,26 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         }
     }
     
+    // MARK: - Methods | Empty State
+    
+    internal func setEmptyState(visible: Bool) {
+        tableView.backgroundView?.isHidden = !visible
+    }
+    
+    private func showEmptyStateIfNeeded(oldCount: Int, newCount: Int) {
+        guard let bgView = tableView.backgroundView else {
+            return
+        }
+        let shouldShowEmptyView = newCount == 0
+        let transitionedFromEmpty = oldCount == 0
+        //If the transition was an actual change in state, notify.
+        if (shouldShowEmptyView && !transitionedFromEmpty) ||
+                (!shouldShowEmptyView && transitionedFromEmpty) {
+            self.emptyStateChanged?(bgView, shouldShowEmptyView)
+        }
+        setEmptyState(visible: shouldShowEmptyView)
+    }
+    
     // MARK: - Methods | UITableView DataSource & Delegate
     
     override public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -94,6 +139,10 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     }
     
     override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let prev = previousCellCount {
+            showEmptyStateIfNeeded(oldCount: prev, newCount: cellCount)
+        }
+        previousCellCount = cellCount
         return cellCount
     }
     
@@ -107,7 +156,7 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     }
     
     override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: false)
         guard let item = item(at: indexPath) else {
             return
         }

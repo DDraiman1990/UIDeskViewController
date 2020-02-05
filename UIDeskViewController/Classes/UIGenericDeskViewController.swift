@@ -25,7 +25,6 @@
 //
 
 import UIKit
-import UIKit
 
 public protocol UIGenericDeskViewController: UITableViewController {
     associatedtype ModelType
@@ -34,6 +33,17 @@ public protocol UIGenericDeskViewController: UITableViewController {
     typealias CellConfiguration = (CellType, ModelType) -> Void
     typealias RowSelected = (ModelType, Int) -> Void
     typealias DetermineCellHeight = (ModelType, Int) -> CGFloat
+    typealias EmptyStateChanged = (UIView, Bool) -> Void
+    
+    /// The closure to be called when the list transitions from
+    /// or to an empty state
+    ///
+    /// Used if your custom state requires some custom behavior
+    /// to only happen when it appears.
+    /// An example for such usage is if the empty state contains
+    /// an animation we want to turn off if this view is hidden
+    /// and turn on when it is visible again.
+    var emptyStateChanged: EmptyStateChanged? { get set }
     
     /// The closure to be called when a new cell dequeues.
     var configure: CellConfiguration { get set }
@@ -72,4 +82,33 @@ public protocol UIGenericDeskViewController: UITableViewController {
     /// Will hide/show separators below the last cell of the table.
     /// - Parameter hidden: should the extra separators be hidden.
     func setEmptyCellsSeparators(hidden: Bool)
+    
+    /// Will set the empty state view to be the given UIView.
+    ///
+    /// This view will appear as the table's background when there
+    /// are no entries to be presented.
+    /// - Parameter customEmptyStateView: UIView for the empty table
+    /// state
+    func set(customEmptyStateView: UIView)
+    
+    
+    /// Will set the default UIDeskEmptyStateView, with the given
+    /// arguments, as the empty state view.
+    ///
+    /// This view will appear as the table's background when there
+    /// are no entries to be presented.
+    /// - Parameters:
+    ///   - title: The top text. 1 line and bold.
+    ///   - description: The bottom text. 4 line and regular.
+    ///   - icon: optional icon to appear above all the texts.
+    func setEmptyStateView(title: String,
+                           description: String,
+                           icon: UIImage?)
+    
+    /// Will set the empty state view to nil and will not present
+    /// anything if the list is empty.
+    ///
+    /// - Warning: will also set the EmptyStateChanged to nil for
+    /// efficiency since a nil view will never be presented.
+    func clearEmptyStateView()
 }

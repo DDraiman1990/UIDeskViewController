@@ -33,6 +33,7 @@ class ItemsExampleViewController: UIViewController {
     
     private var users: [SimpleUser] = []
     private var tableViewController: UIItemsDeskViewController<SimpleUser, UserCell>!
+    private var emptyStateToggleButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,13 @@ class ItemsExampleViewController: UIViewController {
             print("Failed to fetch users from AppDelegate")
             return
         }
+        self.users = users
+        emptyStateToggleButton = UIBarButtonItem(
+            title: "Toggle Empty",
+            style: .plain,
+            target: self,
+            action: #selector(toggleEmptyState))
+        self.navigationItem.rightBarButtonItem = emptyStateToggleButton
         tableViewController = UIItemsDeskViewController<SimpleUser, UserCell>(
             items: users,
             configure: { cell, user in
@@ -55,6 +63,22 @@ class ItemsExampleViewController: UIViewController {
             return self.cellHeight
         }
         tableViewController.setEmptyCellsSeparators(hidden: true)
+        
+        tableViewController.emptyStateChanged = { view, visible in
+            print("Empty view \(view) is now \(visible ? "visible" : "hidden")")
+        }
+        tableViewController.setEmptyStateView(
+            title: "Lullaby of Woe",
+            description: "As the witcher, brave and bold, paid in coin of gold. He'll chop and slice you, cut and dice you, eat you up whole. Eat you whole.",
+            icon: UIImage(named: "dvc_wolf"))
         embed(tableViewController, containerView: view)
+    }
+    
+    @objc private func toggleEmptyState() {
+        if tableViewController.cellCount == 0 {
+            tableViewController.set(items: users)
+        } else {
+            tableViewController.set(items: [])
+        }
     }
 }

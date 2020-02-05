@@ -35,7 +35,7 @@ class FetchResultsExampleViewController: UIViewController {
     private var coreDataStack: CoreDataStack {
         return (UIApplication.shared.delegate as! AppDelegate).coreDataStack
     }
-    
+    private var emptyStateToggleButton: UIBarButtonItem!
     private lazy var fetchedResultsController: NSFetchedResultsController<User> = {
       let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
         let ageSort = NSSortDescriptor(key: #keyPath(User.age), ascending: true)
@@ -53,6 +53,12 @@ class FetchResultsExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emptyStateToggleButton = UIBarButtonItem(
+            title: "Toggle Empty",
+            style: .plain,
+            target: self,
+            action: #selector(toggleEmptyState))
+        self.navigationItem.rightBarButtonItem = emptyStateToggleButton
         tableViewController = UIFetchResultDeskViewController<User, UserCell>(
             fetchController: fetchedResultsController,
             configure: { cell, user in
@@ -71,6 +77,30 @@ class FetchResultsExampleViewController: UIViewController {
             return self.cellHeight
         }
         tableViewController.setEmptyCellsSeparators(hidden: true)
+        tableViewController.setEmptyStateView(
+        title: "Lullaby of Woe",
+        description: "As the witcher, brave and bold, paid in coin of gold. He'll chop and slice you, cut and dice you, eat you up whole. Eat you whole.",
+        icon: UIImage(named: "dvc_wolf"))
         embed(tableViewController, containerView: view)
+    }
+    
+    @objc private func toggleEmptyState() {
+        if tableViewController.cellCount == 0 {
+            (UIApplication.shared.delegate as? AppDelegate)?.importJSONSeedData()
+        } else {
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+            fetchRequest.includesPropertyValues = false
+
+            do {
+                let items = try coreDataStack.managedContext.fetch(fetchRequest) as! [NSManagedObject]
+                for item in items {
+                    coreDataStack.managedContext.delete(item)
+                }
+                coreDataStack.saveContext()
+            } catch {
+                print("Error \(error)")
+            }
+
+        }
     }
 }

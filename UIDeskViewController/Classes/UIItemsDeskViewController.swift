@@ -58,7 +58,7 @@ public class UIItemsDeskViewController<T, Cell: UIDeskCell>: UIBaseDeskViewContr
     
     // MARK: - Methods | Setter
     
-    func set(items: [T]) {
+    public func set(items: [T]) {
         self.items = items
         DispatchQueue.main.async {
             self.tableView.reloadData()
