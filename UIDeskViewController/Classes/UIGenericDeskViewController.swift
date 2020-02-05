@@ -34,7 +34,7 @@ public protocol UIGenericDeskViewController: UITableViewController {
     typealias RowSelected = (ModelType, Int) -> Void
     typealias DetermineCellHeight = (ModelType, Int) -> CGFloat
     typealias EmptyStateChanged = (UIView, Bool) -> Void
-    
+    typealias DeleteRequest = (ModelType, IndexPath) -> Bool
     /// The closure to be called when the list transitions from
     /// or to an empty state
     ///
@@ -43,7 +43,7 @@ public protocol UIGenericDeskViewController: UITableViewController {
     /// An example for such usage is if the empty state contains
     /// an animation we want to turn off if this view is hidden
     /// and turn on when it is visible again.
-    var emptyStateChanged: EmptyStateChanged? { get set }
+    var onEmptyStateChanged: EmptyStateChanged? { get set }
     
     /// The closure to be called when a new cell dequeues.
     var configure: CellConfiguration { get set }
@@ -54,6 +54,10 @@ public protocol UIGenericDeskViewController: UITableViewController {
     /// A closure to be called every time the controller wishes to
     /// determine the height of each cell.
     var determineCellHeight: DetermineCellHeight? { get set }
+    
+    /// A closure to be called every time the controller wishes to
+    /// delete an entry.
+    var onDeleteRequested: DeleteRequest? { get set }
     
     /// How many cells does this controller have.
     var cellCount: Int { get }

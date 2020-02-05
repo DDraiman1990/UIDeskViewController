@@ -46,6 +46,10 @@ public class UIItemsDeskViewController<T, Cell: UIDeskCell>: UIBaseDeskViewContr
          didSelectRow: @escaping RowSelected) {
         self.items = items
         super.init(configure: configure, didSelectRow: didSelectRow)
+        self.onDeleteRequested = { [weak self] _, indexPath in
+            self?.delete(itemAt: indexPath)
+            return true
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -75,7 +79,7 @@ public class UIItemsDeskViewController<T, Cell: UIDeskCell>: UIBaseDeskViewContr
     
     // MARK: - Methods | UIBaseDeskViewController
     
-    override internal func delete(itemAt indexPath: IndexPath) {
+    private func delete(itemAt indexPath: IndexPath) {
         items.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .fade)
     }

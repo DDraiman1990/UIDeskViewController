@@ -64,7 +64,7 @@ class ItemsExampleViewController: UIViewController {
         }
         tableViewController.setEmptyCellsSeparators(hidden: true)
         
-        tableViewController.emptyStateChanged = { view, visible in
+        tableViewController.onEmptyStateChanged = { view, visible in
             print("Empty view \(view) is now \(visible ? "visible" : "hidden")")
         }
         tableViewController.setEmptyStateView(

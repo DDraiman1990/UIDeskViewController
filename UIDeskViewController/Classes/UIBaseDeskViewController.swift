@@ -43,7 +43,8 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     public var configure: (Cell, T) -> Void
     public var didSelectRow: (T, Int) -> Void
     public var determineCellHeight: ((T, Int) -> CGFloat)?
-    public var emptyStateChanged: ((UIView, Bool) -> Void)?
+    public var onEmptyStateChanged: ((UIView, Bool) -> Void)?
+    public var onDeleteRequested: ((T, IndexPath) -> Bool)?
     
     // MARK: - Properties | Should be Overridden by Child
 
@@ -57,7 +58,7 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         return nil
     }
     public func reloadData() {}
-    internal func delete(itemAt: IndexPath) {}
+    internal func onDeleted(item: T, at indexPath: IndexPath) {}
     
     // MARK: - Methods | UIGenericDeskViewController
     
@@ -74,7 +75,7 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     
     public func clearEmptyStateView() {
         tableView.backgroundView = nil
-        emptyStateChanged = nil
+        onEmptyStateChanged = nil
     }
     
     public func set(customEmptyStateView: UIView) {
@@ -125,9 +126,20 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
         //If the transition was an actual change in state, notify.
         if (shouldShowEmptyView && !transitionedFromEmpty) ||
                 (!shouldShowEmptyView && transitionedFromEmpty) {
-            self.emptyStateChanged?(bgView, shouldShowEmptyView)
+            self.onEmptyStateChanged?(bgView, shouldShowEmptyView)
         }
         setEmptyState(visible: shouldShowEmptyView)
+    }
+    
+    // MARK: - Methods | Data Handling
+    
+    private func delete(itemAt indexPath: IndexPath) {
+        guard let item = self.item(at: indexPath) else {
+            return
+        }
+        if onDeleteRequested?(item, indexPath) ?? false {
+            onDeleted(item: item, at: indexPath)
+        }
     }
     
     // MARK: - Methods | UITableView DataSource & Delegate
