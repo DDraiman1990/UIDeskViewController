@@ -1,11 +1,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIDeskViewController'
-  s.version          = '0.1.0'
+  s.version          = '0.9.0'
   s.summary          = 'A simple Generic UITableViewController for iOS'
 
   s.description      = <<-DESC
-  A simple Generic UITableViewController for iOS
+  A simple Generic UITableViewController for iOS.
+  UIDeskViewController supports an Array based table and an NSFetchResultsController table out of the box without the need to add a single line of code.
                        DESC
 
   s.homepage         = 'https://github.com/ddraiman1990/UIDeskViewController'
@@ -15,7 +16,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/ddraiman1990/UIDeskViewController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'UIDeskViewController/Classes/**/*'
   
