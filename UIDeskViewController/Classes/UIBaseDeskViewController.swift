@@ -77,12 +77,16 @@ public class UIBaseDeskViewController<T, Cell: UIDeskCell>: UITableViewControlle
     
     public func setEmptyStateView(title: String,
                                   description: String,
-                                  icon: UIImage?) {
+                                  icon: UIImage?,
+                                  titleColor: UIColor? = nil,
+                                  descriptionColor: UIColor? = nil) {
         let emptyStateView = UIDeskEmptyStateView(
             frame: tableView.frame,
             title: title,
             description: description,
-            icon: icon)
+            icon: icon,
+            titleColor: titleColor,
+            descriptionColor: descriptionColor)
         set(customEmptyStateView: emptyStateView)
     }
     

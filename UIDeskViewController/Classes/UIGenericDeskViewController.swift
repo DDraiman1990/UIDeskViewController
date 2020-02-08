@@ -101,7 +101,6 @@ public protocol UIGenericDeskViewController: UITableViewController {
     /// state
     func set(customEmptyStateView: UIView)
     
-    
     /// Will set the default UIDeskEmptyStateView, with the given
     /// arguments, as the empty state view.
     ///
@@ -111,9 +110,13 @@ public protocol UIGenericDeskViewController: UITableViewController {
     ///   - title: The top text. 1 line and bold.
     ///   - description: The bottom text. 4 line and regular.
     ///   - icon: optional icon to appear above all the texts.
+    ///   - titleColor: UIColor for the title label.
+    ///   - descriptionColor: UIColor for the title label.
     func setEmptyStateView(title: String,
                            description: String,
-                           icon: UIImage?)
+                           icon: UIImage?,
+                           titleColor: UIColor?,
+                           descriptionColor: UIColor?)
     
     /// Will set the empty state view to nil and will not present
     /// anything if the list is empty.

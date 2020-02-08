@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIDeskViewController'
-  s.version          = '0.9.1'
+  s.version          = '0.9.2'
   s.summary          = 'A simple Generic UITableViewController for iOS'
 
   s.description      = <<-DESC
