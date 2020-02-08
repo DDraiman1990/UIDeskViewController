@@ -2,7 +2,8 @@
 <img src="https://user-images.githubusercontent.com/6796434/73785593-32523380-475d-11ea-9811-ffd67297d436.png" height="70%" width="400">
 <br/>
 
-UIDeskViewController is a simple Generic UITableViewController for iOS.
+A simple Generic UITableViewController for iOS.
+UIDeskViewController supports an Array based table and an NSFetchResultsController table out of the box without the need to add a single line of code.
 
 <br/>
 </p>
@@ -20,7 +21,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 - Swift 5.0 or above.
-- Deployment Target: 10.0 or above (due to the use of NSFetchResultsController)
+- Deployment Target: 11.0 or above (due to the use of NSFetchResultsController)
 
 
 ## Installation

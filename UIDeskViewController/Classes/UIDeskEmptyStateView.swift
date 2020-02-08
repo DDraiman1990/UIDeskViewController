@@ -32,7 +32,7 @@ public class UIDeskEmptyStateView: UIView {
     struct LabelConfig {
         var text: String
         let font: UIFont
-        let color: UIColor
+        var color: UIColor
         let numOfLines: Int
     }
     
@@ -81,7 +81,7 @@ public class UIDeskEmptyStateView: UIView {
                       iconConfig: icon)
     }
     
-    init(frame: CGRect, title: String, description: String, icon: UIImage?) {
+    init(frame: CGRect, title: String, description: String, icon: UIImage?, titleColor: UIColor? = nil, descriptionColor: UIColor? = nil) {
         stackView = UIStackView()
         titleLabel = UILabel()
         descriptionLabel = UILabel()
@@ -90,9 +90,15 @@ public class UIDeskEmptyStateView: UIView {
         
         var defaultTitle = defaultTitleConfig
         defaultTitle.text = title
+        if let color = titleColor {
+            defaultTitle.color = color
+        }
         
         var defaultDescription = defaultDescriptionConfig
         defaultDescription.text = description
+        if let color = descriptionColor {
+            defaultDescription.color = color
+        }
         
         var defaultIcon: IconConfig?
         if let icon = icon {
